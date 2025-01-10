@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number System Converter</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="title">Number System Converter</h2>
+
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <label>From :</label>
+            <select name="" id="select-from">
+              <option selected value="10">Decimalis</option>
+              <option value="2">Binaris</option>
+              <option value="8">Octalis</option>
+              <option value="16">HexaDecimalis</option>
+            </select>
+          </div>
+          <input value="0" type="text" class="input-from" placeholder="0" />
+        </div>
+
+        <span><i class="fas fa-left-right"></i></span>
+
+        <div class="row">
+          <div class="col">
+            <label>To :</label>
+            <select name="" id="select-to">
+              <option value="10">Decimalis</option>
+              <option selected value="2">Binaris</option>
+              <option value="8">Octalis</option>
+              <option value="16">HexaDecimalis</option>
+            </select>
+          </div>
+          <input type="text" class="input-to" placeholder="0" />
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
