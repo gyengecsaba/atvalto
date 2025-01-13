@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(hatter_atvaltohoz.jfif);
+  background: rgba(20, 40, 40, 0.8);
   background-size: cover;
 }
 
