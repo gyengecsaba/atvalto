@@ -20,15 +20,11 @@ input_to.oninput = () => {
 };
 
 let updateResult = () => {
-  input_to.value = Number(
-    parseInt(input_from.value, select_from.value)
-  ).toString(select_to.value);
+  input_to.value = Number(parseInt(input_from.value, select_from.value)).toString(select_to.value);
 };
 
 let reverseResult = () => {
-  input_from.value = Number(parseInt(input_to.value, select_to.value)).toString(
-    select_from.value
-  );
+  input_from.value = Number(parseInt(input_to.value, select_to.value)).toString(select_from.value);
 };
 
 updateResult();
