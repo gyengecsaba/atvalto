@@ -18,6 +18,10 @@ body {
 }
 
 .wrapper {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-63%);
   width: 100%;
   max-width: 550px;
   background: rgb(0, 110, 20);
@@ -74,4 +78,54 @@ body {
   font-size: 17px;
   border-radius: 10px;
   border: solid 2px black;
+}
+
+.menu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5%);
+    background: rgb(0, 110, 20);
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-weight: 500;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li:hover{
+    color: rgb(87, 87, 87);
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    min-width: 900px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-17%);
+}
+
+.card {
+    border: solid 2px black;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    margin: 8px;
+    background: rgb(202, 202, 202);
+}
+
+.card h1 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 7px;
 }
