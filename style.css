@@ -120,9 +120,9 @@ body {
   width: 80%;
   min-width: 450px;
   position: absolute;
-  top: 27%;
+  top: 17%;
   left: 50%;
-  transform: translateX(-50%) translateY(-27%);
+  transform: translateX(-50%) translateY(-17%);
 }
 
 .card {
@@ -145,4 +145,63 @@ body {
   width: 100%;
   margin-top: 7px;
   margin-bottom: 7px;
+}
+
+.card:hover{
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+.card:not(hover) {
+  transition-duration: 1s;
+  transform: scale(1.0);
+}
+
+#card-1{
+  position: absolute;
+  top: -20%;
+  left: 6.75%;
+  width: 20%;
+  
+}
+#card-1 img{
+  float: right;
+}
+
+#card-2{
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 20%;
+}
+
+#card-3{
+  position: absolute;
+  top: -20%;
+  left: 28.5%;
+  width: 20%;
+}
+
+#card-4{
+ position: absolute;
+ top: -20%;
+ left: 72%;
+ width: 20%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 40%;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 60%;
+    
+  }
 }
