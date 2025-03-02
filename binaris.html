@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szamrendszer Atvalto</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
 </head>
+
 <body>
 
     <div class="menu">
         <h1>Binaris</h1>
-          <ul>
-              <li><a href="index.html">Kezdolap |</a></li>
-              <li><a href="binaris.html">Binaris |</a></li>
-              <li><a href="oktalis.html">Oktalis |</a></li>
-              <li><a href="decimalis.html">Decimalis |</a></li>
-              <li><a href="hexadecimalis.html">HexaDecimalis</a></li>
-          </ul>
-      </div>
+        <ul>
+            <li><a href="index.html">Kezdolap |</a></li>
+            <li><a href="binaris.html">Binaris |</a></li>
+            <li><a href="oktalis.html">Oktalis |</a></li>
+            <li><a href="decimalis.html">Decimalis |</a></li>
+            <li><a href="hexadecimalis.html">HexaDecimalis |</a></li>
+            <li><a href="quiz.html" target="_blank">Quiz</a></li>
+        </ul>
+    </div>
 
-      <script src="javascript.js"></script>
+
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Fogalom</h1>
+            <p>A bináris számrendszer egy olyan számrendszer, amely csak két számjegyet használ: 0 és 1. Ez egy kettes
+                alapú számrendszer, ahol minden szám a 2 hatványaiból épül fel.</p>
+            <img style="width: 60%;"
+                src="https://blog.silverpc.hu/wp-content/uploads/2024/11/kettes-szamrendszer-1024x748-1.webp"
+                alt="kep_1">
+            <br><br>
+            <p><br><br>Bináris számrendszerre példa:</p>
+            <p>11110001001000000</p>
+        </div>
+
+        <div class="card" id="card-2">
+            <h1>Számítás</h1> <br>
+            <p style="font-size: 18px;">Az eredeti számot maradékosan osztjuk kettővel, így megkapjuk, hány kettes lenne
+                benne. A maradék az egyesek számát adja. Megnézzük, hogy van-e elég kettes ahhoz, hogy egy nagyobb
+                egységet képezzen. Ha van, akkor egy maradékos osztással megkapjuk, hány kettest nem lehet egy nagyobb
+                egységre beváltani. Ismételjük az osztásokat, amíg nem kapunk nullát vagy egyet. Ez lesz a kettes
+                számrendszerbe átírt szám első jegye, bitje. A többi jegyét fordított sorrendben adják a maradékok. </p>
+        </div>
+
+        <div class="card" id="card-3" style="font-size: 18px;">
+            <h1>Használat</h1><br>
+            <ul>
+                <li>A számítógépek minden adatot és műveletet bináris formában tárolnak és dolgoznak fel.</li> <br>
+                <li>A digitális kommunikáció (pl. internet) bináris jeleket használ az adatok továbbítására.</li><br>
+                <li>A logikai áramkörök és mikrovezérlők működése bináris logikán alapul</li>
+            </ul>
+        </div>
+
+        <script src="javascript.js"></script>
 </body>
+
 </html>

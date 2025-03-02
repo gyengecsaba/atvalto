@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="question">Kérdés</h2>
+        <button class="option" onclick="selectAnswer(0)"></button>
+        <button class="option" onclick="selectAnswer(1)"></button>
+        <button class="option" onclick="selectAnswer(2)"></button>
+        <button class="option" onclick="selectAnswer(3)"></button>
+        <p id="score">Score: 0</p>
+        <button id="next-btn" class="hidden" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="wrapper">
+        <h2 class="title">Számológép a feladatokhoz:</h2>
+  
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <label>Innen :</label>
+              <select name="" id="select-from">
+                <option selected value="10">Decimalis</option>
+                <option value="2">Binaris</option>
+                <option value="8">Oktalis</option>
+                <option value="16">HexaDecimalis</option>
+              </select>
+            </div>
+            <input value="0" type="text" class="input-from" placeholder="0" />
+          </div>
+  
+          <span><i class="fas fa-left-right"></i></span>
+  
+          <div class="row">
+            <div class="col">
+              <label>Ide :</label>
+              <select name="" id="select-to">
+                <option value="10">Decimalis</option>
+                <option selected value="2">Binaris</option>
+                <option value="8">Oktalis</option>
+                <option value="16">HexaDecimalis</option>
+              </select>
+            </div>
+            <input type="text" class="input-to" placeholder="0" />
+          </div>
+        </div>
+      </div>
+  
+      <script src="javascript.js"></script>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>

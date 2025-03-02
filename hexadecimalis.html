@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szamrendszer Atvalto</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
 </head>
+
 <body>
     <div class="menu">
         <h1>Hexadecimalis</h1>
-          <ul>
-              <li><a href="index.html">Kezdolap |</a></li>
-              <li><a href="binaris.html">Binaris |</a></li>
-              <li><a href="oktalis.html">Oktalis |</a></li>
-              <li><a href="decimalis.html">Decimalis |</a></li>
-              <li><a href="hexadecimalis.html">HexaDecimalis</a></li>
-          </ul>
-      </div>
+        <ul>
+            <li><a href="index.html">Kezdolap |</a></li>
+            <li><a href="binaris.html">Binaris |</a></li>
+            <li><a href="oktalis.html">Oktalis |</a></li>
+            <li><a href="decimalis.html">Decimalis |</a></li>
+            <li><a href="hexadecimalis.html">HexaDecimalis |</a></li>
+            <li><a href="quiz.html" target="_blank">Quiz</a></li>
+        </ul>
+    </div>
 
-      <script src="javascript.js"></script>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Fogalom</h1>
+            <p>A tizenhatos, vagy hexadecimális számrendszer a 16-os számon alapuló számrendszer, az informatika
+                kulcsfontosságú számrendszere (hexa). A tizenhatos számrendszer a 0, 1, 2, 3,
+                4, 5, 6, 7, 8, 9 számjegyeken kívül az A, B, C, D, E, F betűket (vagy ezeknek kisbetűs megfelelőjét)
+                használja a számábrázoláshoz. </p>
+            <img style="width: 36%;"
+                src="https://files.oaiusercontent.com/file-KpfbYKJK98y3A9g4rKFAAV?se=2025-03-02T20%3A38%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dcd038c6a-4e49-4d36-82c7-139da3e4d0de.webp&sig=1v9yd0FEKNQcWVVCM3rxN8wJGrUJQh6zawmXaA1hUOY%3D"
+                alt="kep_1">
+            <br><br>
+            <p><br><br>Hexadecimális számrendszerre példa:</p>
+            <p>10E</p>
+        </div>
+
+        <div class="card" id="card-2">
+            <h1>Számítás</h1> <br>
+            <p style="font-size: 18px;">Az eredeti számot maradékosan osztjuk tizenhattal, így megkapjuk, hány
+                tizenhatos lenne benne. A maradék az egyesek számát adja. Megnézzük, hogy van-e elég tizenhatos ahhoz,
+                hogy egy nagyobb egységet képezzen. Ha van, akkor egy maradékos osztással megkapjuk, hány tizenhatost
+                nem lehet egy nagyobb egységre beváltani. Ismételjük az osztásokat, amíg nem kapunk egy tizenhatnál
+                kisebb számot. Ez lesz a tizenhatos számrendszerbe átírt szám első jegye. A többi jegyét fordított
+                sorrendben adják a maradékok. </p>
+        </div>
+
+        <div class="card" id="card-3" style="font-size: 18px;">
+            <h1>Használat</h1><br>
+            <ul>
+                <li>A hexadecimális számrendszert gyakran használják a számítógépes rendszerekben, mert egyetlen
+                    hexadecimális számjegy (0-9, A-F) pontosan négy bináris bitet reprezentál, így könnyebb olvasni és
+                    kezelni a bináris adatokat.</li> <br>
+                    <li>Processzorok hexadecimálisan kezelik az utasításokat, pl. egy utasítás így nézhet ki:</li><br>
+                        <li>Mikrovezérlők memória- és portcímei hexadecimális formában jelennek meg</li>
+            </ul>
+        </div>
+
+        <script src="javascript.js"></script>
 </body>
+
 </html>
